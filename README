@@ -1,0 +1,16 @@
+At this point there are two available functions in the library.
+The first is a polynomial spectral method differentiation matrix assembler. This is called poldif.m and is part of the Spectral_Functions.py. To call:
+import Spectral_Functions as spec
+D=spec.poldif(np.linspace(0,1,10),1)
+for example. This is the implementation by Weideman and Reddy from 1998 which has been adapted fro python.
+The second function implements the surf function from octave/matlab. It is called as follows:
+from Plot_Functions import surf
+surf(z,x,y)
+
+x and y are optional and if not given linspace between 0 and 1 in used for plotting a surface plot of z.
+
+Please add the folder these functions are extracted to to your python path.
+
+Be Coding
+
+rexfuzzle.com
